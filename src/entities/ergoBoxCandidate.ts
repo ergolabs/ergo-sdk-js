@@ -1,6 +1,6 @@
-import {TokenAmount, tokenAmountFromProxy, TokenAmountProxy, tokenAmountToProxy} from "./tokenAmount"
 import {ErgoTree} from "./ergoTree"
 import {Registers} from "./registers"
+import {TokenAmount, tokenAmountFromProxy, TokenAmountProxy, tokenAmountToProxy} from "./tokenAmount"
 
 export type ErgoBoxCandidate = {
   readonly value: bigint

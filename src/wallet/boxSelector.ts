@@ -1,10 +1,10 @@
+import * as R from "ramda"
 import {ErgoBox} from "../entities/ergoBox"
-import {OverallAmount} from "./entities/overallAmount"
-import {BoxSelection} from "./entities/boxSelection"
+import {TokenAmount} from "../entities/tokenAmount"
 import {InsufficientInputs} from "../errors/insufficientInputs"
 import {TokenId} from "../types"
-import {TokenAmount} from "../entities/tokenAmount"
-import * as R from "ramda"
+import {BoxSelection} from "./entities/boxSelection"
+import {OverallAmount} from "./entities/overallAmount"
 
 export interface BoxSelector {
   /** Selects inputs to satisfy target balance and tokens.

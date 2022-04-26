@@ -1,7 +1,7 @@
-import {Input} from "./input"
-import {ErgoBox, ergoBoxFromProxy, ErgoBoxProxy, ergoBoxToProxy} from "./ergoBox"
-import {DataInput} from "./dataInput"
 import {TxId} from "../types"
+import {DataInput} from "./dataInput"
+import {ErgoBox, ergoBoxFromProxy, ErgoBoxProxy, ergoBoxToProxy} from "./ergoBox"
+import {Input} from "./input"
 
 export type ErgoTx = {
   readonly id: TxId

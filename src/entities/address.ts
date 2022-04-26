@@ -1,5 +1,5 @@
-import {Base58String} from "../types"
 import * as bs58 from "bs58"
+import {Base58String} from "../types"
 
 export enum Network {
   Mainnet = 0 << 4,

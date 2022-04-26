@@ -1,9 +1,9 @@
 import test from "ava"
-import {DefaultBoxSelector} from "./boxSelector"
 import {InsufficientInputs} from "../errors/insufficientInputs"
 import {boxes, boxesWithAssets} from "../samples"
-import {BoxSelection} from "./entities/boxSelection"
 import {RustModule} from "../utils/rustLoader"
+import {DefaultBoxSelector} from "./boxSelector"
+import {BoxSelection} from "./entities/boxSelection"
 
 test.before(async () => {
   await RustModule.load(true)

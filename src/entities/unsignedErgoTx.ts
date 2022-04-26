@@ -1,9 +1,3 @@
-import {
-  UnsignedInput,
-  unsignedInputFromProxy,
-  UnsignedInputProxy,
-  unsignedInputToProxy
-} from "./unsignedInput"
 import {DataInput} from "./dataInput"
 import {
   ErgoBoxCandidate,
@@ -11,6 +5,12 @@ import {
   ErgoBoxCandidateProxy,
   ergoBoxCandidateToProxy
 } from "./ergoBoxCandidate"
+import {
+  UnsignedInput,
+  unsignedInputFromProxy,
+  UnsignedInputProxy,
+  unsignedInputToProxy
+} from "./unsignedInput"
 
 export type UnsignedErgoTx = {
   readonly inputs: UnsignedInput[]

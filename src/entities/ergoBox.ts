@@ -1,7 +1,7 @@
-import {TokenAmount, tokenAmountFromProxy, TokenAmountProxy, tokenAmountToProxy} from "./tokenAmount"
 import {BoxId, TxId} from "../types"
 import {ErgoTree} from "./ergoTree"
 import {Registers} from "./registers"
+import {TokenAmount, tokenAmountFromProxy, TokenAmountProxy, tokenAmountToProxy} from "./tokenAmount"
 
 export type ErgoBox = {
   readonly boxId: BoxId

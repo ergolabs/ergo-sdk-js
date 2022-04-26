@@ -1,7 +1,7 @@
-import {RustModule} from "../utils/rustLoader"
 import {HexString} from "../types"
-import {ErgoTree} from "./ergoTree"
 import {toHex} from "../utils/hex"
+import {RustModule} from "../utils/rustLoader"
+import {ErgoTree} from "./ergoTree"
 
 export type ErgoTreeTemplate = HexString
 

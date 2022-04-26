@@ -1,7 +1,7 @@
-import {BoxSelection} from "./boxSelection"
+import {Address} from "../../entities/address"
 import {DataInput} from "../../entities/dataInput"
 import {ErgoBoxCandidate} from "../../entities/ergoBoxCandidate"
-import {Address} from "../../entities/address"
+import {BoxSelection} from "./boxSelection"
 
 export type TxRequest = {
   readonly inputs: BoxSelection

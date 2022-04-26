@@ -1,6 +1,6 @@
 import test from "ava"
-import {ergoTreeFromAddress} from "./ergoTree"
 import {RustModule} from "../utils/rustLoader"
+import {ergoTreeFromAddress} from "./ergoTree"
 
 test.before(async () => {
   await RustModule.load(true)

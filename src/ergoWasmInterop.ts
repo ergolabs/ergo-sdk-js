@@ -8,15 +8,15 @@ import {
   ErgoTree as WasmErgoTree,
   Token as WasmToken
 } from "ergo-lib-wasm-browser"
-import {BoxSelection} from "./wallet/entities/boxSelection"
 import {ErgoBox} from "./entities/ergoBox"
-import {ErgoTree, ergoTreeToBytea} from "./entities/ergoTree"
-import {TokenAmount} from "./entities/tokenAmount"
 import {ErgoBoxCandidate} from "./entities/ergoBoxCandidate"
-import {BoxId, TxId} from "./types"
-import {TxRequest} from "./wallet/entities/txRequest"
+import {ErgoTree, ergoTreeToBytea} from "./entities/ergoTree"
 import {NetworkContext} from "./entities/networkContext"
+import {TokenAmount} from "./entities/tokenAmount"
+import {BoxId, TxId} from "./types"
 import {RustModule} from "./utils/rustLoader"
+import {BoxSelection} from "./wallet/entities/boxSelection"
+import {TxRequest} from "./wallet/entities/txRequest"
 
 export function txRequestToWasmTransaction(req: TxRequest, ctx: NetworkContext): UnsignedTransaction {
   const inputs = boxSelectionToWasm(req.inputs)

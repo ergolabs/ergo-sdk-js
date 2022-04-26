@@ -1,9 +1,9 @@
-import {ChangeBox} from "./changeBox"
-import {OverallAmount} from "./overallAmount"
 import {ErgoBox} from "../../entities/ergoBox"
 import {TokenAmount} from "../../entities/tokenAmount"
-import {TokenId} from "../../types"
 import {UnsignedInput} from "../../entities/unsignedInput"
+import {TokenId} from "../../types"
+import {ChangeBox} from "./changeBox"
+import {OverallAmount} from "./overallAmount"
 
 export class BoxSelection {
   private constructor(public readonly inputs: ErgoBox[], public readonly change?: ChangeBox) {}

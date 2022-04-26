@@ -1,5 +1,4 @@
 import test from "ava"
-
 import {RustModule} from "./rustLoader"
 
 test("rustLoader", async t => {

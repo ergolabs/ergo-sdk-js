@@ -1,9 +1,9 @@
-import {TxRequest} from "./entities/txRequest"
-import {UnsignedErgoTx} from "../entities/unsignedErgoTx"
-import {NetworkContext} from "../entities/networkContext"
-import {EmptyRegisters} from "../entities/registers"
 import {MinerAddressMainnet, MinerAddressTestnet} from "../constants"
 import {ergoTreeFromAddress} from "../entities/ergoTree"
+import {NetworkContext} from "../entities/networkContext"
+import {EmptyRegisters} from "../entities/registers"
+import {UnsignedErgoTx} from "../entities/unsignedErgoTx"
+import {TxRequest} from "./entities/txRequest"
 
 export interface TxAssembler {
   assemble(req: TxRequest, ctx: NetworkContext): UnsignedErgoTx

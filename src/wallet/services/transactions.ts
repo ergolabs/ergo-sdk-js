@@ -1,9 +1,9 @@
 import {Address} from "../../entities/address"
-import {TransactionContext} from "../entities/transactionContext"
+import {ergoTreeFromAddress} from "../../entities/ergoTree"
 import {ErgoTx} from "../../entities/ergoTx"
+import {TransactionContext} from "../entities/transactionContext"
 import {Prover} from "../prover"
 import {TxAssembler} from "../txAssembler"
-import {ergoTreeFromAddress} from "../../entities/ergoTree"
 
 export interface Transactions {
   simple(recipient: Address, ctx: TransactionContext): Promise<ErgoTx>
